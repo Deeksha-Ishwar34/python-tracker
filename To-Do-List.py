@@ -30,7 +30,7 @@ while True:
                 print(f"{index}. {task}")
             try:
                 user_remove = int(input("Enter the task number to mark as completed: "))
-                if 1 <= user_remove <= len(todo_list):
+                if 1 <= user_remove <= len(todo_list):  #this check if the input number is within valid range of the list(from 1 to the number of tasks)
                     removed_task = todo_list.pop(user_remove - 1)
                     print(f"Task '{removed_task}' marked as completed and removed.")
                 else:
